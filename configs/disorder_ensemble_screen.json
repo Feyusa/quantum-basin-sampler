@@ -1,0 +1,76 @@
+{
+  "experiment_name": "disorder_realization_exact_screen",
+  "seed": 2026,
+  "device_profile": "ruby_proxy",
+  "require_ruby_proxy": true,
+  "descent_rule": "steepest",
+  "exact_analysis_max_spins": 16,
+  "landscape_screen": {
+    "compute_barriers": true,
+    "low_energy_tolerance_mhz": 0.25,
+    "barrier_threshold_mhz": 0.25,
+    "minimum_effective_basins": 2.0
+  },
+  "geometries": [
+    {
+      "kind": "jittered_kagome",
+      "n_atoms": 12,
+      "spacing": 6.0,
+      "jitter_fraction": 0.06,
+      "min_distance": 5.0,
+      "seed": 17,
+      "require_connected": true
+    },
+    {
+      "kind": "jittered_kagome",
+      "n_atoms": 12,
+      "spacing": 6.0,
+      "jitter_fraction": 0.06,
+      "min_distance": 5.0,
+      "seed": 19,
+      "require_connected": true
+    },
+    {
+      "kind": "jittered_kagome",
+      "n_atoms": 12,
+      "spacing": 6.0,
+      "jitter_fraction": 0.06,
+      "min_distance": 5.0,
+      "seed": 21,
+      "require_connected": true
+    },
+    {
+      "kind": "amorphous",
+      "n_atoms": 12,
+      "radius": 11.0,
+      "min_distance": 5.0,
+      "seed": 31,
+      "require_connected": true
+    },
+    {
+      "kind": "amorphous",
+      "n_atoms": 12,
+      "radius": 11.0,
+      "min_distance": 5.0,
+      "seed": 33,
+      "require_connected": true
+    },
+    {
+      "kind": "amorphous",
+      "n_atoms": 12,
+      "radius": 11.0,
+      "min_distance": 5.0,
+      "seed": 35,
+      "require_connected": true
+    }
+  ],
+  "pulse_grid": {
+    "omega_mhz": [2.0],
+    "delta_initial_mhz": [-6.0],
+    "delta_target_mhz": [1.5, 3.0],
+    "rise_ns": [300],
+    "sweep_ns": [600],
+    "hold_ns": [0],
+    "fall_ns": [300]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "experiment_name": "quickstart_controlled_nonadiabatic_scan",
+  "seed": 7,
+  "shots": 300,
+  "replicates": 2,
+  "bootstrap_resamples": 100,
+  "confidence_level": 0.95,
+  "device_profile": "ruby_proxy",
+  "require_ruby_proxy": true,
+  "descent_rule": "steepest",
+  "exact_analysis_max_spins": 12,
+  "compute_exact_barriers": true,
+  "landscape_screen": {
+    "compute_barriers": true,
+    "low_energy_tolerance_mhz": 0.25,
+    "barrier_threshold_mhz": 0.25,
+    "minimum_effective_basins": 2.0
+  },
+  "geometries": [
+    {
+      "kind": "kagome",
+      "n_atoms": 9,
+      "spacing": 5.0
+    }
+  ],
+  "pulse_grid": {
+    "omega_mhz": [2.0],
+    "delta_initial_mhz": [-6.0],
+    "delta_target_mhz": [3.0, 6.0],
+    "rise_ns": [300],
+    "sweep_ns": [300, 900],
+    "hold_ns": [0, 200],
+    "fall_ns": [300]
+  },
+  "classical_baselines": [
+    {
+      "name": "uniform_random"
+    },
+    {
+      "name": "simulated_annealing",
+      "temperature_start_mhz": 20.0,
+      "temperature_end_mhz": 0.05,
+      "temperature_steps": 40,
+      "sweeps_per_temperature": 1
+    }
+  ]
+}

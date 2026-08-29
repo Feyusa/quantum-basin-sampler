@@ -1,0 +1,95 @@
+{
+  "experiment_name": "proposal_geometry_and_nonadiabatic_scan",
+  "seed": 2026,
+  "shots": 2000,
+  "replicates": 3,
+  "bootstrap_resamples": 500,
+  "confidence_level": 0.95,
+  "device_profile": "ruby_proxy",
+  "require_ruby_proxy": true,
+  "descent_rule": "steepest",
+  "exact_analysis_max_spins": 16,
+  "compute_exact_barriers": true,
+  "landscape_screen": {
+    "compute_barriers": true,
+    "low_energy_tolerance_mhz": 0.25,
+    "barrier_threshold_mhz": 0.25,
+    "minimum_effective_basins": 2.0
+  },
+  "geometries": [
+    {
+      "kind": "kagome",
+      "n_atoms": 12,
+      "spacing": 5.0
+    },
+    {
+      "kind": "triangular",
+      "n_atoms": 13,
+      "spacing": 5.0
+    },
+    {
+      "kind": "square",
+      "n_atoms": 12,
+      "spacing": 5.0
+    },
+    {
+      "kind": "vacancy_kagome",
+      "n_atoms": 12,
+      "spacing": 5.0,
+      "vacancies": 1,
+      "seed": 11
+    },
+    {
+      "kind": "jittered_kagome",
+      "n_atoms": 12,
+      "spacing": 6.0,
+      "jitter_fraction": 0.06,
+      "min_distance": 5.0,
+      "seed": 19,
+      "require_connected": true
+    },
+    {
+      "kind": "amorphous",
+      "n_atoms": 12,
+      "radius": 11.0,
+      "min_distance": 5.0,
+      "seed": 33,
+      "require_connected": true
+    }
+  ],
+  "pulse_grid": {
+    "omega_mhz": [1.2, 2.0],
+    "delta_initial_mhz": [-6.0],
+    "delta_target_mhz": [1.5, 3.0],
+    "rise_ns": [300],
+    "sweep_ns": [200, 600, 1500],
+    "hold_ns": [0, 300],
+    "fall_ns": [300]
+  },
+  "classical_baselines": [
+    {
+      "name": "uniform_random"
+    },
+    {
+      "name": "metropolis",
+      "temperature_mhz": 1.0,
+      "burn_in_sweeps": 100,
+      "sweeps_between_samples": 10
+    },
+    {
+      "name": "simulated_annealing",
+      "temperature_start_mhz": 20.0,
+      "temperature_end_mhz": 0.05,
+      "temperature_steps": 80,
+      "sweeps_per_temperature": 2
+    },
+    {
+      "name": "parallel_tempering",
+      "temperature_min_mhz": 0.1,
+      "temperature_max_mhz": 20.0,
+      "replicas": 12,
+      "burn_in_cycles": 200,
+      "cycles_between_samples": 10
+    }
+  ]
+}
