@@ -16,6 +16,15 @@ dependencies = [
   "scipy>=1.11",
 ]
 
+[project.optional-dependencies]
+qaptiva = [
+  "myqlm>=1.13,<2",
+  "pulser-myqlm>=0.8,<1",
+]
+qadence = [
+  "qadence==1.11.5",
+]
+
 [project.scripts]
 qbasin = "qbasin.cli:main"
 
@@ -25,4 +34,3 @@ where = ["src"]
 [tool.ruff]
 line-length = 88
 target-version = "py311"
-

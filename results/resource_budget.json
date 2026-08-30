@@ -1,0 +1,84 @@
+{
+  "additional_batches": 170,
+  "additional_shot_fraction": 0.20601851851851852,
+  "additional_shots": 178000,
+  "allocation_status": "pending_host_per_shot_and_per_batch_timing",
+  "experiment": "ruby_proposal_scan_resource_budget",
+  "host_verified_estimate": null,
+  "inventory": [
+    {
+      "batches": 432,
+      "name": "predeclared_science_grid",
+      "purpose": "primary controlled nonadiabatic experiment",
+      "shots": 864000,
+      "shots_per_batch": 2000
+    },
+    {
+      "batches": 72,
+      "name": "calibration_references",
+      "purpose": "72 short all-ground, preparation/readout and geometry-session reference batches",
+      "shots": 36000,
+      "shots_per_batch": 500
+    },
+    {
+      "batches": 54,
+      "name": "mechanism_controls",
+      "purpose": "54 no-drive, endpoint and deliberately rapid-sweep control batches",
+      "shots": 54000,
+      "shots_per_batch": 1000
+    },
+    {
+      "batches": 44,
+      "name": "held_out_confirmation_reserve",
+      "purpose": "44 full-shot batches reserved for confirming selected effects on independent jobs",
+      "shots": 88000,
+      "shots_per_batch": 2000
+    }
+  ],
+  "notes": [
+    "The 864000 primary shots are 6 geometries x 24 pulse points x 3 replicates x 2000 shots.",
+    "Calibration batches may be reduced if the hosting entity supplies equivalent calibration data without charging it to the project.",
+    "The allocation request must not use pulse waveform duration as QPU time; atom loading/rearrangement, state preparation, readout, reset and queue/batch overhead dominate the conversion.",
+    "Replace the null host timing values with written TGCC/GENCI/Pasqal guidance before quoting requested QPU hours."
+  ],
+  "qpu_hour_formula": "(total_shots * per_shot_cycle_seconds + total_batches * per_batch_overhead_seconds) / 3600 + setup_calibration_hours",
+  "science_batches": 432,
+  "science_shots": 864000,
+  "timing_sensitivity_models": [
+    {
+      "batch_overhead_hours": 0.33444444444444443,
+      "name": "illustrative_50ms_cycle",
+      "per_batch_overhead_seconds": 2.0,
+      "per_shot_cycle_seconds": 0.05,
+      "setup_calibration_hours": 1.0,
+      "shot_cycle_hours": 14.472222222222221,
+      "source": "illustrative assumption",
+      "status": "sensitivity_only_not_an_allocation_request",
+      "total_qpu_hours": 15.806666666666667
+    },
+    {
+      "batch_overhead_hours": 0.8361111111111111,
+      "name": "illustrative_100ms_cycle",
+      "per_batch_overhead_seconds": 5.0,
+      "per_shot_cycle_seconds": 0.1,
+      "setup_calibration_hours": 2.0,
+      "shot_cycle_hours": 28.944444444444443,
+      "source": "illustrative assumption",
+      "status": "sensitivity_only_not_an_allocation_request",
+      "total_qpu_hours": 31.780555555555555
+    },
+    {
+      "batch_overhead_hours": 1.6722222222222223,
+      "name": "illustrative_200ms_cycle",
+      "per_batch_overhead_seconds": 10.0,
+      "per_shot_cycle_seconds": 0.2,
+      "setup_calibration_hours": 4.0,
+      "shot_cycle_hours": 57.888888888888886,
+      "source": "illustrative assumption",
+      "status": "sensitivity_only_not_an_allocation_request",
+      "total_qpu_hours": 63.56111111111111
+    }
+  ],
+  "total_batches": 602,
+  "total_shots": 1042000
+}

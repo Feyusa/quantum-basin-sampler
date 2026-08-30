@@ -41,6 +41,9 @@ classical performance at a clearly stated resource budget.
 - Exact pre-emulation landscape screening, independent run replicates, and
   multinomial finite-shot bootstrap intervals.
 - Reproducible JSON/CSV/PNG experiment artifacts.
+- Optional Pulser-to-myQLM/Qaptiva job conversion and a TGCC-gated RUBY
+  submission example, plus a separate Qadence program-construction example.
+- A proposal shot inventory and host-timing QPU-hour calculator.
 
 ## Installation
 
@@ -87,6 +90,22 @@ qbasin scan \
   --output results/quickstart
 ```
 
+Run the verified 12-atom coarse scan:
+
+```bash
+qbasin scan \
+  --config configs/n12_coarse_scan.json \
+  --output results/n12_coarse_scan
+```
+
+Calculate the proposal resource inventory:
+
+```bash
+qbasin resources \
+  --config configs/resource_budget.json \
+  --output results/resource_budget.json
+```
+
 Important artifacts are:
 
 - `summary.csv`: one row per quantum or classical method and pulse point;
@@ -114,8 +133,9 @@ the exact screen first and run the quantum design in batches.
 4. Run a coarse quantum scan on shortlisted small geometries.
 5. Refine only around reproducible quality–diversity crossovers.
 6. Add noise/dephasing controls.
-7. Replace `ruby_proxy` with the actual RUBY device/backend adapter when it is
-   made available by the hosting entity.
+7. Replace the provisional `ruby_proxy` constraints with the deployed RUBY
+   device description and execute the included Qaptiva adapter after access is
+   granted.
 
 ## Interpretation rules
 
@@ -136,6 +156,12 @@ See [Geometry taxonomy](docs/GEOMETRY_TAXONOMY.md),
 [proposal plan](docs/PROPOSAL_PLAN.md) explains the Path D claim and the next
 hardware-facing work packages; [verification](docs/VERIFICATION.md) records
 what was actually executed locally.
+
+The [hardware-stack adapter](docs/HARDWARE_STACK.md) documents the exact
+Pulser -> pulser-myQLM/Qaptiva -> TGCC RUBY boundary and the separate Qadence
+example. The [resource budget](docs/RESOURCE_BUDGET.md) records 1,042,000
+planned science/control shots and leaves the final QPU-hour request pending
+host-verified cycle and batch timings.
 
 ## Tests
 

@@ -1,0 +1,2 @@
+name,family,n_atoms,graph_cutoff_um,min_distance_um,median_nearest_distance_um,nearest_distance_cv,edges,connected_components,mean_degree,max_degree,degree_variance,triangles,cycle_rank,bipartite,has_odd_cycle,bond_strength_cv,structural_class,screening_label
+jittered_kagome_n12_seed19,bond_disordered_kagome,12,6.9562786370189515,5.5974598688457675,5.7968988641824595,0.027748360210515712,16,1,2.6666666666666665,4,0.888888888888889,4,5,False,True,0.32189674143248426,correlated_bond_disorder,disordered_frustrated_candidate

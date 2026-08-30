@@ -1,0 +1,28 @@
+{
+  "artifacts": {
+    "comparisons": "comparisons.csv",
+    "landscapes": "landscapes/",
+    "plots": "plots/",
+    "runs": "runs/",
+    "summary": "summary.csv",
+    "taxonomy": "geometry_taxonomy.csv"
+  },
+  "bootstrap_resamples": 200,
+  "classical_baselines": [
+    "uniform_random",
+    "simulated_annealing",
+    "parallel_tempering"
+  ],
+  "configuration": "configs/n12_coarse_scan.json",
+  "created_utc": "2026-08-30T15:33:59.928741+00:00",
+  "device_profile": "ruby_proxy",
+  "experiment_name": "n12_jittered_kagome_coarse_scan",
+  "geometries": [
+    "jittered_kagome_n12_seed19"
+  ],
+  "output_directory": "results/n12_coarse_scan",
+  "pulse_points_per_geometry": 8,
+  "quantum_runs": 16,
+  "replicates": 2,
+  "shots_per_method": 500
+}

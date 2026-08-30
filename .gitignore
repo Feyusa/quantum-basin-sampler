@@ -13,7 +13,11 @@ results/*
 !results/disorder_ensemble_screen.csv
 !results/quickstart_verified/
 !results/quickstart_verified/**
+!results/n12_coarse_scan/
+!results/n12_coarse_scan/**
+!results/resource_budget.json
 *.png
 *.pdf
 !results/quickstart_verified/plots/*.png
+!results/n12_coarse_scan/plots/*.png
 .DS_Store

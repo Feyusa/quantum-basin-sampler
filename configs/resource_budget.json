@@ -1,0 +1,68 @@
+{
+  "experiment": "ruby_proposal_scan_resource_budget",
+  "science_design": {
+    "geometries": 6,
+    "pulse_points_per_geometry": 24,
+    "replicates": 3,
+    "shots_per_run": 2000,
+    "expected_science_shots": 864000
+  },
+  "additional_batches": [
+    {
+      "name": "calibration_references",
+      "purpose": "72 short all-ground, preparation/readout and geometry-session reference batches",
+      "batches": 72,
+      "shots_per_batch": 500
+    },
+    {
+      "name": "mechanism_controls",
+      "purpose": "54 no-drive, endpoint and deliberately rapid-sweep control batches",
+      "batches": 54,
+      "shots_per_batch": 1000
+    },
+    {
+      "name": "held_out_confirmation_reserve",
+      "purpose": "44 full-shot batches reserved for confirming selected effects on independent jobs",
+      "batches": 44,
+      "shots_per_batch": 2000
+    }
+  ],
+  "host_verified_timing_model": {
+    "per_shot_cycle_seconds": null,
+    "per_batch_overhead_seconds": null,
+    "setup_calibration_hours": null,
+    "source": null
+  },
+  "timing_sensitivity_models": [
+    {
+      "name": "illustrative_50ms_cycle",
+      "status": "sensitivity_only_not_an_allocation_request",
+      "per_shot_cycle_seconds": 0.05,
+      "per_batch_overhead_seconds": 2.0,
+      "setup_calibration_hours": 1.0,
+      "source": "illustrative assumption"
+    },
+    {
+      "name": "illustrative_100ms_cycle",
+      "status": "sensitivity_only_not_an_allocation_request",
+      "per_shot_cycle_seconds": 0.1,
+      "per_batch_overhead_seconds": 5.0,
+      "setup_calibration_hours": 2.0,
+      "source": "illustrative assumption"
+    },
+    {
+      "name": "illustrative_200ms_cycle",
+      "status": "sensitivity_only_not_an_allocation_request",
+      "per_shot_cycle_seconds": 0.2,
+      "per_batch_overhead_seconds": 10.0,
+      "setup_calibration_hours": 4.0,
+      "source": "illustrative assumption"
+    }
+  ],
+  "notes": [
+    "The 864000 primary shots are 6 geometries x 24 pulse points x 3 replicates x 2000 shots.",
+    "Calibration batches may be reduced if the hosting entity supplies equivalent calibration data without charging it to the project.",
+    "The allocation request must not use pulse waveform duration as QPU time; atom loading/rearrangement, state preparation, readout, reset and queue/batch overhead dominate the conversion.",
+    "Replace the null host timing values with written TGCC/GENCI/Pasqal guidance before quoting requested QPU hours."
+  ]
+}

@@ -9,6 +9,7 @@ from pathlib import Path
 from qbasin.experiment import run_experiment, validate_configuration
 from qbasin.geometry import build_geometry, classify_geometry
 from qbasin.io import read_json, write_csv, write_json
+from qbasin.resources import calculate_resource_budget
 from qbasin.screening import screen_landscapes
 
 
@@ -42,6 +43,12 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     scan.add_argument("--config", type=Path, required=True)
     scan.add_argument("--output", type=Path, required=True)
+
+    resources = subparsers.add_parser(
+        "resources", help="calculate shot inventory and QPU-hour sensitivity"
+    )
+    resources.add_argument("--config", type=Path, required=True)
+    resources.add_argument("--output", type=Path, default=None)
     return parser
 
 
@@ -70,6 +77,12 @@ def main(argv: list[str] | None = None) -> None:
     if args.command == "scan":
         manifest = run_experiment(args.config, args.output)
         print(json.dumps(manifest, indent=2, sort_keys=True))
+        return
+    if args.command == "resources":
+        budget = calculate_resource_budget(read_json(args.config))
+        if args.output:
+            write_json(args.output, budget)
+        print(json.dumps(budget, indent=2, sort_keys=True))
         return
     raise AssertionError("unreachable command")
 
