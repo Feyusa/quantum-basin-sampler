@@ -11,9 +11,7 @@ claim to reproduce the final RUBY control stack or calibration.
 Does controlled nonadiabatic Rydberg dynamics produce a reproducible
 quality–diversity trade-off that differs from matched classical samplers?
 
-The project does not assume that a useful result must have a U-shaped overlap
-distribution, and a distributional difference alone is not called an
-advantage.  A candidate sampling benefit requires better low-energy mass,
+A candidate sampling benefit requires better low-energy mass,
 basin coverage, solution diversity, rare-basin discovery, or downstream
 classical performance at a clearly stated resource budget.
 
