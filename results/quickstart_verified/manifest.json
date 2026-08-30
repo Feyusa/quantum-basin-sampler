@@ -1,0 +1,27 @@
+{
+  "artifacts": {
+    "comparisons": "comparisons.csv",
+    "landscapes": "landscapes/",
+    "plots": "plots/",
+    "runs": "runs/",
+    "summary": "summary.csv",
+    "taxonomy": "geometry_taxonomy.csv"
+  },
+  "bootstrap_resamples": 100,
+  "classical_baselines": [
+    "uniform_random",
+    "simulated_annealing"
+  ],
+  "configuration": "outputs/quantum-basin-sampler/configs/quickstart.json",
+  "created_utc": "2026-08-29T17:41:55.978600+00:00",
+  "device_profile": "ruby_proxy",
+  "experiment_name": "quickstart_controlled_nonadiabatic_scan",
+  "geometries": [
+    "kagome_n9"
+  ],
+  "output_directory": "outputs/quantum-basin-sampler/results/quickstart_verified",
+  "pulse_points_per_geometry": 8,
+  "quantum_runs": 16,
+  "replicates": 2,
+  "shots_per_method": 300
+}

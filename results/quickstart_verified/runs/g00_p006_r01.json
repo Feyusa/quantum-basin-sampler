@@ -1,0 +1,1595 @@
+{
+  "classical_baselines": {
+    "simulated_annealing": {
+      "basin_counts": {
+        "000011011": 18,
+        "000101110": 19,
+        "001001101": 22,
+        "001011001": 21,
+        "001101100": 13,
+        "010000111": 18,
+        "010010011": 29,
+        "010100110": 19,
+        "100001111": 141
+      },
+      "basin_mapping": {
+        "descent_flip_cost_evaluations": 81,
+        "input_samples": 300,
+        "mean_accepted_flips": 0.0,
+        "rule": "steepest",
+        "unique_basins": 9,
+        "unique_input_states": 9,
+        "weighted_accepted_flips": 0
+      },
+      "basin_table": [
+        {
+          "bitstring": "100001111",
+          "count": 141,
+          "energy_mhz": -28.006005166386508,
+          "energy_rad_per_us": -175.9669201742353,
+          "excitations": 5,
+          "magnetization": 0.1111111111111111,
+          "probability": 0.47,
+          "rank": 1
+        },
+        {
+          "bitstring": "010010011",
+          "count": 29,
+          "energy_mhz": -23.019815144885705,
+          "energy_rad_per_us": -144.637764292336,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.09666666666666666,
+          "rank": 2
+        },
+        {
+          "bitstring": "001001101",
+          "count": 22,
+          "energy_mhz": -23.354924087744934,
+          "energy_rad_per_us": -146.74331587841357,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.07333333333333333,
+          "rank": 3
+        },
+        {
+          "bitstring": "001011001",
+          "count": 21,
+          "energy_mhz": -23.30597639535273,
+          "energy_rad_per_us": -146.43576845675452,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.07,
+          "rank": 4
+        },
+        {
+          "bitstring": "000101110",
+          "count": 19,
+          "energy_mhz": -23.354924087744934,
+          "energy_rad_per_us": -146.74331587841357,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.06333333333333334,
+          "rank": 5
+        },
+        {
+          "bitstring": "010100110",
+          "count": 19,
+          "energy_mhz": -23.30597639535273,
+          "energy_rad_per_us": -146.43576845675452,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.06333333333333334,
+          "rank": 6
+        },
+        {
+          "bitstring": "000011011",
+          "count": 18,
+          "energy_mhz": -23.354924087744934,
+          "energy_rad_per_us": -146.74331587841357,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.06,
+          "rank": 7
+        },
+        {
+          "bitstring": "010000111",
+          "count": 18,
+          "energy_mhz": -23.354924087744934,
+          "energy_rad_per_us": -146.74331587841357,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.06,
+          "rank": 8
+        },
+        {
+          "bitstring": "001101100",
+          "count": 13,
+          "energy_mhz": -23.019815144885705,
+          "energy_rad_per_us": -144.637764292336,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.043333333333333335,
+          "rank": 9
+        }
+      ],
+      "bootstrap": {
+        "confidence_level": 0.95,
+        "intervals": {
+          "best_energy_mhz": {
+            "lower": -28.006005166386508,
+            "median": -28.006005166386508,
+            "upper": -28.006005166386508
+          },
+          "collision_probability_p_q1": {
+            "lower": 0.21765055555555557,
+            "median": 0.25551111111111113,
+            "upper": 0.2968344444444444
+          },
+          "effective_basin_count": {
+            "lower": 3.3688835485104236,
+            "median": 3.913724392368022,
+            "upper": 4.5958118004396855
+          },
+          "energy_std_mhz": {
+            "lower": 2.3420144959360063,
+            "median": 2.371620764027661,
+            "upper": 2.3861790457684555
+          },
+          "low_energy_mass": {
+            "lower": 0.4098333333333333,
+            "median": 0.4633333333333333,
+            "upper": 0.5133333333333333
+          },
+          "low_energy_threshold_mhz": {
+            "lower": -27.756005166386508,
+            "median": -27.756005166386508,
+            "upper": -27.756005166386508
+          },
+          "mean_energy_mhz": {
+            "lower": -25.698281771855214,
+            "median": -25.46178616259587,
+            "upper": -25.19054522557303
+          },
+          "mean_pairwise_hamming": {
+            "lower": 2.8502572222222224,
+            "median": 3.0683555555555557,
+            "upper": 3.26259
+          },
+          "mean_replica_overlap": {
+            "lower": 0.27498,
+            "median": 0.3181432098765432,
+            "upper": 0.3666095061728395
+          },
+          "negative_overlap_mass": {
+            "lower": 0.3054405555555556,
+            "median": 0.3447555555555556,
+            "upper": 0.388215
+          },
+          "normalized_entropy": {
+            "lower": 0.7631488170690106,
+            "median": 0.808874395846646,
+            "upper": 0.8520484270336072
+          },
+          "reference_basin_coverage": {
+            "lower": 1.0,
+            "median": 1.0,
+            "upper": 1.0
+          },
+          "reference_minima": {
+            "lower": 9.0,
+            "median": 9.0,
+            "upper": 9.0
+          },
+          "samples": {
+            "lower": 300.0,
+            "median": 300.0,
+            "upper": 300.0
+          },
+          "shannon_entropy_nats": {
+            "lower": 1.6768093370290926,
+            "median": 1.7772787025322365,
+            "upper": 1.8721417449589082
+          },
+          "top_basin_mass": {
+            "lower": 0.4098333333333333,
+            "median": 0.4633333333333333,
+            "upper": 0.5133333333333333
+          },
+          "unique_basins": {
+            "lower": 9.0,
+            "median": 9.0,
+            "upper": 9.0
+          },
+          "unique_low_energy_basins": {
+            "lower": 1.0,
+            "median": 1.0,
+            "upper": 1.0
+          }
+        },
+        "method": "multinomial_shot_bootstrap",
+        "resamples": 100,
+        "seed": 1101135647
+      },
+      "comparison_with_quantum": {
+        "candidate_mass_on_reference_support": 1.0,
+        "hellinger": 0.2454393353233341,
+        "jensen_shannon_bits": 0.08309767209619406,
+        "reference_mass_on_candidate_support": 1.0,
+        "support_jaccard": 1.0,
+        "total_variation": 0.2566666666666667
+      },
+      "metadata": {
+        "acceptance_rate": 0.22825925925925927,
+        "accepted_moves": 24652,
+        "energy_difference_evaluations": 108000,
+        "parameters": {
+          "sweeps_per_temperature": 1,
+          "temperature_end_mhz": 0.05,
+          "temperature_start_mhz": 20.0,
+          "temperature_steps": 40
+        },
+        "requested_samples": 300,
+        "sampler": "simulated_annealing",
+        "seed": 3569557940,
+        "wall_seconds": 0.785606278999694
+      },
+      "metrics": {
+        "best_energy_mhz": -28.006005166386508,
+        "collision_probability_p_q1": 0.2576222222222222,
+        "effective_basin_count": 3.881652721469853,
+        "energy_std_mhz": 2.373921282393759,
+        "low_energy_mass": 0.47,
+        "low_energy_threshold_mhz": -27.756005166386508,
+        "mean_energy_mhz": -25.487490583720554,
+        "mean_pairwise_hamming": 3.057444444444444,
+        "mean_replica_overlap": 0.3205679012345679,
+        "negative_overlap_mass": 0.34515555555555555,
+        "normalized_entropy": 0.8108467275661079,
+        "reference_basin_coverage": 1.0,
+        "reference_minima": 9,
+        "samples": 300.0,
+        "shannon_entropy_nats": 1.781612358260898,
+        "top_basin_mass": 0.47,
+        "unique_basins": 9,
+        "unique_low_energy_basins": 1
+      },
+      "overlap_distribution": {
+        "-0.1111111111111111": 0.25693333333333335,
+        "-0.3333333333333333": 0.07097777777777778,
+        "-0.7777777777777778": 0.017244444444444444,
+        "0.1111111111111111": 0.08662222222222223,
+        "0.3333333333333333": 0.24126666666666668,
+        "0.5555555555555556": 0.06933333333333334,
+        "1.0": 0.2576222222222222
+      },
+      "raw_counts": {
+        "000011011": 18,
+        "000101110": 19,
+        "001001101": 22,
+        "001011001": 21,
+        "001101100": 13,
+        "010000111": 18,
+        "010010011": 29,
+        "010100110": 19,
+        "100001111": 141
+      }
+    },
+    "uniform_random": {
+      "basin_counts": {
+        "000011011": 66,
+        "000101110": 44,
+        "001001101": 64,
+        "001011001": 28,
+        "001101100": 5,
+        "010000111": 44,
+        "010010011": 16,
+        "010100110": 9,
+        "100001111": 24
+      },
+      "basin_mapping": {
+        "descent_flip_cost_evaluations": 7632,
+        "input_samples": 300,
+        "mean_accepted_flips": 2.64,
+        "rule": "steepest",
+        "unique_basins": 9,
+        "unique_input_states": 228,
+        "weighted_accepted_flips": 792
+      },
+      "basin_table": [
+        {
+          "bitstring": "000011011",
+          "count": 66,
+          "energy_mhz": -23.354924087744934,
+          "energy_rad_per_us": -146.74331587841357,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.22,
+          "rank": 1
+        },
+        {
+          "bitstring": "001001101",
+          "count": 64,
+          "energy_mhz": -23.354924087744934,
+          "energy_rad_per_us": -146.74331587841357,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.21333333333333335,
+          "rank": 2
+        },
+        {
+          "bitstring": "000101110",
+          "count": 44,
+          "energy_mhz": -23.354924087744934,
+          "energy_rad_per_us": -146.74331587841357,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.14666666666666667,
+          "rank": 3
+        },
+        {
+          "bitstring": "010000111",
+          "count": 44,
+          "energy_mhz": -23.354924087744934,
+          "energy_rad_per_us": -146.74331587841357,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.14666666666666667,
+          "rank": 4
+        },
+        {
+          "bitstring": "001011001",
+          "count": 28,
+          "energy_mhz": -23.30597639535273,
+          "energy_rad_per_us": -146.43576845675452,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.09333333333333334,
+          "rank": 5
+        },
+        {
+          "bitstring": "100001111",
+          "count": 24,
+          "energy_mhz": -28.006005166386508,
+          "energy_rad_per_us": -175.9669201742353,
+          "excitations": 5,
+          "magnetization": 0.1111111111111111,
+          "probability": 0.08,
+          "rank": 6
+        },
+        {
+          "bitstring": "010010011",
+          "count": 16,
+          "energy_mhz": -23.019815144885705,
+          "energy_rad_per_us": -144.637764292336,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.05333333333333334,
+          "rank": 7
+        },
+        {
+          "bitstring": "010100110",
+          "count": 9,
+          "energy_mhz": -23.30597639535273,
+          "energy_rad_per_us": -146.43576845675452,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.03,
+          "rank": 8
+        },
+        {
+          "bitstring": "001101100",
+          "count": 5,
+          "energy_mhz": -23.019815144885705,
+          "energy_rad_per_us": -144.637764292336,
+          "excitations": 4,
+          "magnetization": -0.1111111111111111,
+          "probability": 0.016666666666666666,
+          "rank": 9
+        }
+      ],
+      "bootstrap": {
+        "confidence_level": 0.95,
+        "intervals": {
+          "best_energy_mhz": {
+            "lower": -28.006005166386508,
+            "median": -28.006005166386508,
+            "upper": -28.006005166386508
+          },
+          "collision_probability_p_q1": {
+            "lower": 0.14654611111111113,
+            "median": 0.15755555555555556,
+            "upper": 0.17390333333333333
+          },
+          "effective_basin_count": {
+            "lower": 5.750423102522472,
+            "median": 6.346967559943582,
+            "upper": 6.82384432117882
+          },
+          "energy_std_mhz": {
+            "lower": 1.0535829120517082,
+            "median": 1.2699587433649693,
+            "upper": 1.4286760684433089
+          },
+          "low_energy_mass": {
+            "lower": 0.05333333333333334,
+            "median": 0.08,
+            "upper": 0.10333333333333333
+          },
+          "low_energy_threshold_mhz": {
+            "lower": -27.756005166386508,
+            "median": -27.756005166386508,
+            "upper": -27.756005166386508
+          },
+          "mean_energy_mhz": {
+            "lower": -23.80528321107739,
+            "median": -23.687611784044933,
+            "upper": -23.575132031355974
+          },
+          "mean_pairwise_hamming": {
+            "lower": 3.185225,
+            "median": 3.277911111111111,
+            "upper": 3.363401111111111
+          },
+          "mean_replica_overlap": {
+            "lower": 0.25257753086419754,
+            "median": 0.2715753086419753,
+            "upper": 0.2921722222222222
+          },
+          "negative_overlap_mass": {
+            "lower": 0.1369177777777778,
+            "median": 0.16986666666666667,
+            "upper": 0.20571666666666663
+          },
+          "normalized_entropy": {
+            "lower": 0.866881043810534,
+            "median": 0.8957975726029097,
+            "upper": 0.9213822914107339
+          },
+          "reference_basin_coverage": {
+            "lower": 1.0,
+            "median": 1.0,
+            "upper": 1.0
+          },
+          "reference_minima": {
+            "lower": 9.0,
+            "median": 9.0,
+            "upper": 9.0
+          },
+          "samples": {
+            "lower": 300.0,
+            "median": 300.0,
+            "upper": 300.0
+          },
+          "shannon_entropy_nats": {
+            "lower": 1.9000865074535596,
+            "median": 1.9682364712368132,
+            "upper": 2.024483815810027
+          },
+          "top_basin_mass": {
+            "lower": 0.19825,
+            "median": 0.23,
+            "upper": 0.27666666666666667
+          },
+          "unique_basins": {
+            "lower": 9.0,
+            "median": 9.0,
+            "upper": 9.0
+          },
+          "unique_low_energy_basins": {
+            "lower": 1.0,
+            "median": 1.0,
+            "upper": 1.0
+          }
+        },
+        "method": "multinomial_shot_bootstrap",
+        "resamples": 100,
+        "seed": 2848676150
+      },
+      "comparison_with_quantum": {
+        "candidate_mass_on_reference_support": 1.0,
+        "hellinger": 0.5083650951723907,
+        "jensen_shannon_bits": 0.3493168876071167,
+        "reference_mass_on_candidate_support": 1.0,
+        "support_jaccard": 1.0,
+        "total_variation": 0.64
+      },
+      "metadata": {
+        "acceptance_rate": null,
+        "accepted_moves": 0,
+        "energy_difference_evaluations": 0,
+        "parameters": {},
+        "requested_samples": 300,
+        "sampler": "uniform_random",
+        "seed": 113888589,
+        "wall_seconds": 0.003950020000047516
+      },
+      "metrics": {
+        "best_energy_mhz": -28.006005166386508,
+        "collision_probability_p_q1": 0.1560666666666667,
+        "effective_basin_count": 6.40751815463477,
+        "energy_std_mhz": 1.2733387232616815,
+        "low_energy_mass": 0.08,
+        "low_energy_threshold_mhz": -27.756005166386508,
+        "mean_energy_mhz": -23.69751606597441,
+        "mean_pairwise_hamming": 3.2834666666666665,
+        "mean_replica_overlap": 0.27034074074074077,
+        "negative_overlap_mass": 0.1696888888888889,
+        "normalized_entropy": 0.9006539157014531,
+        "reference_basin_coverage": 1.0,
+        "reference_minima": 9,
+        "samples": 300.0,
+        "shannon_entropy_nats": 1.9789389192533364,
+        "top_basin_mass": 0.22,
+        "unique_basins": 9,
+        "unique_low_energy_basins": 1
+      },
+      "overlap_distribution": {
+        "-0.1111111111111111": 0.030933333333333334,
+        "-0.3333333333333333": 0.1313777777777778,
+        "-0.7777777777777778": 0.007377777777777778,
+        "0.1111111111111111": 0.4083777777777778,
+        "0.3333333333333333": 0.11626666666666667,
+        "0.5555555555555556": 0.14960000000000004,
+        "1.0": 0.1560666666666667
+      },
+      "raw_counts": {
+        "000000100": 1,
+        "000000111": 4,
+        "000001000": 1,
+        "000001010": 1,
+        "000001011": 1,
+        "000001101": 2,
+        "000010001": 1,
+        "000010100": 1,
+        "000010110": 1,
+        "000010111": 1,
+        "000011001": 1,
+        "000011011": 1,
+        "000011101": 2,
+        "000100000": 1,
+        "000100001": 2,
+        "000100010": 1,
+        "000100011": 1,
+        "000101010": 1,
+        "000101011": 2,
+        "000110000": 2,
+        "000110001": 2,
+        "000110100": 1,
+        "000110101": 1,
+        "000110110": 1,
+        "000111000": 1,
+        "000111010": 3,
+        "000111011": 1,
+        "000111111": 1,
+        "001000000": 1,
+        "001000001": 1,
+        "001000010": 2,
+        "001000100": 2,
+        "001000101": 1,
+        "001001000": 1,
+        "001001101": 2,
+        "001010000": 5,
+        "001010001": 1,
+        "001010010": 1,
+        "001010011": 1,
+        "001010101": 1,
+        "001010110": 1,
+        "001011000": 1,
+        "001011001": 1,
+        "001011010": 1,
+        "001011011": 1,
+        "001011100": 2,
+        "001011101": 2,
+        "001100010": 1,
+        "001100011": 2,
+        "001100101": 1,
+        "001100111": 1,
+        "001101010": 1,
+        "001110000": 1,
+        "001110001": 2,
+        "001110010": 1,
+        "001110011": 1,
+        "001110100": 1,
+        "001110101": 1,
+        "001110110": 1,
+        "001111000": 1,
+        "001111011": 1,
+        "001111101": 2,
+        "010000001": 1,
+        "010000010": 3,
+        "010000011": 1,
+        "010000100": 3,
+        "010001010": 1,
+        "010001110": 3,
+        "010010000": 1,
+        "010010001": 1,
+        "010010100": 2,
+        "010010101": 1,
+        "010011001": 1,
+        "010011011": 1,
+        "010011100": 1,
+        "010011111": 1,
+        "010100101": 1,
+        "010101000": 1,
+        "010101010": 1,
+        "010110001": 1,
+        "010110010": 1,
+        "010110011": 3,
+        "010110101": 1,
+        "010110110": 3,
+        "010111001": 1,
+        "010111010": 1,
+        "010111110": 2,
+        "010111111": 1,
+        "011000010": 1,
+        "011000011": 2,
+        "011000100": 1,
+        "011001000": 1,
+        "011001100": 2,
+        "011001111": 1,
+        "011010010": 4,
+        "011010011": 1,
+        "011010101": 1,
+        "011010110": 1,
+        "011010111": 1,
+        "011011000": 1,
+        "011011001": 1,
+        "011011010": 1,
+        "011011011": 1,
+        "011100001": 1,
+        "011100100": 1,
+        "011100110": 1,
+        "011101000": 1,
+        "011101001": 1,
+        "011101110": 1,
+        "011101111": 1,
+        "011110000": 1,
+        "011110100": 1,
+        "011110101": 2,
+        "011110111": 1,
+        "011111010": 2,
+        "011111011": 3,
+        "011111101": 2,
+        "100000000": 1,
+        "100000100": 2,
+        "100001101": 1,
+        "100010000": 1,
+        "100010001": 1,
+        "100011000": 1,
+        "100011001": 1,
+        "100011100": 2,
+        "100011111": 1,
+        "100100000": 1,
+        "100100001": 1,
+        "100100100": 1,
+        "100100101": 1,
+        "100100111": 2,
+        "100101000": 1,
+        "100101011": 1,
+        "100101110": 2,
+        "100110011": 1,
+        "100111000": 1,
+        "100111100": 2,
+        "100111101": 2,
+        "100111110": 1,
+        "100111111": 1,
+        "101000000": 1,
+        "101000100": 1,
+        "101000101": 1,
+        "101000110": 1,
+        "101001000": 2,
+        "101001001": 1,
+        "101001010": 1,
+        "101010000": 1,
+        "101010001": 1,
+        "101010100": 1,
+        "101010111": 1,
+        "101011000": 1,
+        "101011010": 2,
+        "101011100": 1,
+        "101011101": 3,
+        "101011111": 1,
+        "101100001": 1,
+        "101100100": 1,
+        "101101001": 2,
+        "101101010": 1,
+        "101101100": 1,
+        "101110000": 1,
+        "101110001": 2,
+        "101110010": 1,
+        "101110011": 1,
+        "101111010": 1,
+        "101111110": 1,
+        "110000000": 1,
+        "110000001": 1,
+        "110000010": 1,
+        "110000110": 1,
+        "110001001": 1,
+        "110001011": 1,
+        "110001101": 1,
+        "110001111": 1,
+        "110010001": 1,
+        "110010010": 1,
+        "110010100": 1,
+        "110010101": 1,
+        "110011001": 1,
+        "110011010": 2,
+        "110011100": 1,
+        "110011101": 2,
+        "110011111": 2,
+        "110100010": 1,
+        "110100011": 1,
+        "110100111": 2,
+        "110101100": 2,
+        "110101101": 1,
+        "110101110": 1,
+        "110110011": 1,
+        "110110101": 1,
+        "110111000": 1,
+        "110111100": 1,
+        "110111101": 1,
+        "111000000": 1,
+        "111000100": 1,
+        "111000101": 3,
+        "111000110": 1,
+        "111001000": 1,
+        "111001001": 3,
+        "111001010": 2,
+        "111001101": 1,
+        "111001110": 1,
+        "111010011": 1,
+        "111010100": 1,
+        "111010110": 1,
+        "111010111": 2,
+        "111011000": 1,
+        "111011001": 3,
+        "111011010": 1,
+        "111011011": 2,
+        "111011100": 1,
+        "111011101": 1,
+        "111100010": 1,
+        "111101000": 1,
+        "111101001": 1,
+        "111101101": 1,
+        "111101111": 1,
+        "111110000": 1,
+        "111110001": 1,
+        "111110011": 1,
+        "111110101": 1,
+        "111110111": 2,
+        "111111000": 1,
+        "111111010": 1,
+        "111111110": 1,
+        "111111111": 1
+      }
+    }
+  },
+  "geometry": "kagome_n9",
+  "geometry_descriptors": {
+    "bipartite": false,
+    "bond_strength_cv": 2.1175823681357506e-16,
+    "connected_components": 1,
+    "cycle_rank": 2,
+    "degree_variance": 1.2839506172839505,
+    "edges": 10,
+    "family": "clean_kagome",
+    "graph_cutoff_um": 6.0,
+    "has_odd_cycle": true,
+    "max_degree": 4,
+    "mean_degree": 2.2222222222222223,
+    "median_nearest_distance_um": 5.0,
+    "min_distance_um": 5.0,
+    "n_atoms": 9,
+    "name": "kagome_n9",
+    "nearest_distance_cv": 0.0,
+    "screening_label": "clean_frustrated_candidate",
+    "structural_class": "clean_geometric_frustration",
+    "triangles": 2
+  },
+  "landscape_key": "kagome_n9__delta_+6MHz",
+  "pulse": {
+    "delta_initial_mhz": -6.0,
+    "delta_over_omega": 3.0,
+    "delta_target_mhz": 6.0,
+    "fall_ns": 300,
+    "hold_ns": 0,
+    "omega_mhz": 2.0,
+    "rise_ns": 300,
+    "sweep_ns": 900,
+    "sweep_rate_mhz_per_us": 13.333333333333332,
+    "total_duration_ns": 1500
+  },
+  "quantum": {
+    "basin_counts": {
+      "000011011": 19,
+      "000101110": 15,
+      "001001101": 16,
+      "001011001": 4,
+      "001101100": 2,
+      "010000111": 19,
+      "010010011": 4,
+      "010100110": 5,
+      "100001111": 216
+    },
+    "basin_mapping": {
+      "descent_flip_cost_evaluations": 252,
+      "input_samples": 300,
+      "mean_accepted_flips": 0.16666666666666666,
+      "rule": "steepest",
+      "unique_basins": 9,
+      "unique_input_states": 18,
+      "weighted_accepted_flips": 50
+    },
+    "basin_table": [
+      {
+        "bitstring": "100001111",
+        "count": 216,
+        "energy_mhz": -28.006005166386508,
+        "energy_rad_per_us": -175.9669201742353,
+        "excitations": 5,
+        "magnetization": 0.1111111111111111,
+        "probability": 0.72,
+        "rank": 1
+      },
+      {
+        "bitstring": "000011011",
+        "count": 19,
+        "energy_mhz": -23.354924087744934,
+        "energy_rad_per_us": -146.74331587841357,
+        "excitations": 4,
+        "magnetization": -0.1111111111111111,
+        "probability": 0.06333333333333334,
+        "rank": 2
+      },
+      {
+        "bitstring": "010000111",
+        "count": 19,
+        "energy_mhz": -23.354924087744934,
+        "energy_rad_per_us": -146.74331587841357,
+        "excitations": 4,
+        "magnetization": -0.1111111111111111,
+        "probability": 0.06333333333333334,
+        "rank": 3
+      },
+      {
+        "bitstring": "001001101",
+        "count": 16,
+        "energy_mhz": -23.354924087744934,
+        "energy_rad_per_us": -146.74331587841357,
+        "excitations": 4,
+        "magnetization": -0.1111111111111111,
+        "probability": 0.05333333333333334,
+        "rank": 4
+      },
+      {
+        "bitstring": "000101110",
+        "count": 15,
+        "energy_mhz": -23.354924087744934,
+        "energy_rad_per_us": -146.74331587841357,
+        "excitations": 4,
+        "magnetization": -0.1111111111111111,
+        "probability": 0.05,
+        "rank": 5
+      },
+      {
+        "bitstring": "010100110",
+        "count": 5,
+        "energy_mhz": -23.30597639535273,
+        "energy_rad_per_us": -146.43576845675452,
+        "excitations": 4,
+        "magnetization": -0.1111111111111111,
+        "probability": 0.016666666666666666,
+        "rank": 6
+      },
+      {
+        "bitstring": "001011001",
+        "count": 4,
+        "energy_mhz": -23.30597639535273,
+        "energy_rad_per_us": -146.43576845675452,
+        "excitations": 4,
+        "magnetization": -0.1111111111111111,
+        "probability": 0.013333333333333334,
+        "rank": 7
+      },
+      {
+        "bitstring": "010010011",
+        "count": 4,
+        "energy_mhz": -23.019815144885705,
+        "energy_rad_per_us": -144.637764292336,
+        "excitations": 4,
+        "magnetization": -0.1111111111111111,
+        "probability": 0.013333333333333334,
+        "rank": 8
+      },
+      {
+        "bitstring": "001101100",
+        "count": 2,
+        "energy_mhz": -23.019815144885705,
+        "energy_rad_per_us": -144.637764292336,
+        "excitations": 4,
+        "magnetization": -0.1111111111111111,
+        "probability": 0.006666666666666667,
+        "rank": 9
+      }
+    ],
+    "bootstrap": {
+      "confidence_level": 0.95,
+      "intervals": {
+        "best_energy_mhz": {
+          "lower": -28.006005166386508,
+          "median": -28.006005166386508,
+          "upper": -28.006005166386508
+        },
+        "collision_probability_p_q1": {
+          "lower": 0.46012444444444445,
+          "median": 0.5302222222222223,
+          "upper": 0.6080755555555554
+        },
+        "effective_basin_count": {
+          "lower": 1.6446464703931636,
+          "median": 1.8860030015851066,
+          "upper": 2.1733367386553986
+        },
+        "energy_std_mhz": {
+          "lower": 1.9581650305689684,
+          "median": 2.1051206725303526,
+          "upper": 2.2114563373703158
+        },
+        "low_energy_mass": {
+          "lower": 0.6615833333333333,
+          "median": 0.7166666666666667,
+          "upper": 0.7735
+        },
+        "low_energy_threshold_mhz": {
+          "lower": -27.756005166386508,
+          "median": -27.756005166386508,
+          "upper": -27.756005166386508
+        },
+        "mean_energy_mhz": {
+          "lower": -26.946527832857488,
+          "median": -26.68291494666007,
+          "upper": -26.424630071536253
+        },
+        "mean_pairwise_hamming": {
+          "lower": 1.3471861111111112,
+          "median": 1.6121888888888884,
+          "upper": 1.854378333333333
+        },
+        "mean_replica_overlap": {
+          "lower": 0.587915925925926,
+          "median": 0.6417358024691359,
+          "upper": 0.7006253086419753
+        },
+        "negative_overlap_mass": {
+          "lower": 0.04562111111111112,
+          "median": 0.08257777777777778,
+          "upper": 0.11910888888888889
+        },
+        "normalized_entropy": {
+          "lower": 0.43147795156153473,
+          "median": 0.5076850762304251,
+          "upper": 0.5703634502286917
+        },
+        "reference_basin_coverage": {
+          "lower": 0.8888888888888888,
+          "median": 1.0,
+          "upper": 1.0
+        },
+        "reference_minima": {
+          "lower": 9.0,
+          "median": 9.0,
+          "upper": 9.0
+        },
+        "samples": {
+          "lower": 300.0,
+          "median": 300.0,
+          "upper": 300.0
+        },
+        "shannon_entropy_nats": {
+          "lower": 0.9430921459444321,
+          "median": 1.0965771342469757,
+          "upper": 1.2411834711713594
+        },
+        "top_basin_mass": {
+          "lower": 0.6615833333333333,
+          "median": 0.7166666666666667,
+          "upper": 0.7735
+        },
+        "unique_basins": {
+          "lower": 8.0,
+          "median": 9.0,
+          "upper": 9.0
+        },
+        "unique_low_energy_basins": {
+          "lower": 1.0,
+          "median": 1.0,
+          "upper": 1.0
+        }
+      },
+      "method": "multinomial_shot_bootstrap",
+      "resamples": 100,
+      "seed": 2965516365
+    },
+    "hamming_hierarchy": {
+      "labels": [
+        "000011011",
+        "000101110",
+        "001001101",
+        "001011001",
+        "001101100",
+        "010000111",
+        "010010011",
+        "010100110",
+        "100001111"
+      ],
+      "linkage": [
+        [
+          0.0,
+          3.0,
+          0.2222222222222222,
+          2.0
+        ],
+        [
+          1.0,
+          4.0,
+          0.2222222222222222,
+          2.0
+        ],
+        [
+          5.0,
+          6.0,
+          0.2222222222222222,
+          2.0
+        ],
+        [
+          2.0,
+          9.0,
+          0.3333333333333333,
+          3.0
+        ],
+        [
+          7.0,
+          10.0,
+          0.3333333333333333,
+          3.0
+        ],
+        [
+          8.0,
+          12.0,
+          0.4074074074074074,
+          4.0
+        ],
+        [
+          11.0,
+          14.0,
+          0.4722222222222222,
+          6.0
+        ],
+        [
+          13.0,
+          15.0,
+          0.5493827160493826,
+          9.0
+        ]
+      ],
+      "method": "average",
+      "metric": "normalized_hamming"
+    },
+    "metadata": {
+      "atom_order": [
+        "q0",
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8"
+      ],
+      "blockade_ratio": 1.2805351750774867,
+      "device_profile": "ruby_proxy",
+      "pulse": {
+        "delta_initial_mhz": -6.0,
+        "delta_over_omega": 3.0,
+        "delta_target_mhz": 6.0,
+        "fall_ns": 300,
+        "hold_ns": 0,
+        "omega_mhz": 2.0,
+        "rise_ns": 300,
+        "sweep_ns": 900,
+        "sweep_rate_mhz_per_us": 13.333333333333332,
+        "total_duration_ns": 1500
+      },
+      "seed": 3136543701,
+      "shots": 300,
+      "wall_seconds": 0.06194335100008175
+    },
+    "metrics": {
+      "best_energy_mhz": -28.006005166386508,
+      "collision_probability_p_q1": 0.5324444444444445,
+      "effective_basin_count": 1.8781302170283805,
+      "energy_std_mhz": 2.101927050957259,
+      "low_energy_mass": 0.72,
+      "low_energy_threshold_mhz": -27.756005166386508,
+      "mean_energy_mhz": -26.695531854737915,
+      "mean_pairwise_hamming": 1.6129333333333333,
+      "mean_replica_overlap": 0.6415703703703703,
+      "negative_overlap_mass": 0.08397777777777779,
+      "normalized_entropy": 0.5046971790012434,
+      "reference_basin_coverage": 1.0,
+      "reference_minima": 9,
+      "samples": 300.0,
+      "shannon_entropy_nats": 1.1089330458137894,
+      "top_basin_mass": 0.72,
+      "unique_basins": 9,
+      "unique_low_energy_basins": 1
+    },
+    "overlap_distribution": {
+      "-0.1111111111111111": 0.07200000000000001,
+      "-0.3333333333333333": 0.011355555555555556,
+      "-0.7777777777777778": 0.0006222222222222223,
+      "0.1111111111111111": 0.04073333333333334,
+      "0.3333333333333333": 0.33120000000000005,
+      "0.5555555555555556": 0.011644444444444447,
+      "1.0": 0.5324444444444444
+    },
+    "pairwise_relations": [
+      {
+        "hamming_distance": 4,
+        "left": "000011011",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.006333333333333334,
+        "right": "000101110",
+        "right_energy_mhz": -23.354924087744934,
+        "right_probability": 0.05
+      },
+      {
+        "hamming_distance": 4,
+        "left": "000011011",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.006755555555555556,
+        "right": "001001101",
+        "right_energy_mhz": -23.354924087744934,
+        "right_probability": 0.05333333333333334
+      },
+      {
+        "hamming_distance": 2,
+        "left": "000011011",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.2222222222222222,
+        "overlap": 0.5555555555555556,
+        "pair_probability": 0.001688888888888889,
+        "right": "001011001",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 6,
+        "left": "000011011",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.6666666666666666,
+        "overlap": -0.3333333333333333,
+        "pair_probability": 0.0008444444444444445,
+        "right": "001101100",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.006666666666666667
+      },
+      {
+        "hamming_distance": 4,
+        "left": "000011011",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.008022222222222224,
+        "right": "010000111",
+        "right_energy_mhz": -23.354924087744934,
+        "right_probability": 0.06333333333333334
+      },
+      {
+        "hamming_distance": 2,
+        "left": "000011011",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.2222222222222222,
+        "overlap": 0.5555555555555556,
+        "pair_probability": 0.001688888888888889,
+        "right": "010010011",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 6,
+        "left": "000011011",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.6666666666666666,
+        "overlap": -0.3333333333333333,
+        "pair_probability": 0.0021111111111111113,
+        "right": "010100110",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.016666666666666666
+      },
+      {
+        "hamming_distance": 3,
+        "left": "000011011",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.3333333333333333,
+        "overlap": 0.3333333333333333,
+        "pair_probability": 0.0912,
+        "right": "100001111",
+        "right_energy_mhz": -28.006005166386508,
+        "right_probability": 0.72
+      },
+      {
+        "hamming_distance": 4,
+        "left": "000101110",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.005333333333333334,
+        "right": "001001101",
+        "right_energy_mhz": -23.354924087744934,
+        "right_probability": 0.05333333333333334
+      },
+      {
+        "hamming_distance": 6,
+        "left": "000101110",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05,
+        "normalized_hamming": 0.6666666666666666,
+        "overlap": -0.3333333333333333,
+        "pair_probability": 0.0013333333333333335,
+        "right": "001011001",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 2,
+        "left": "000101110",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05,
+        "normalized_hamming": 0.2222222222222222,
+        "overlap": 0.5555555555555556,
+        "pair_probability": 0.0006666666666666668,
+        "right": "001101100",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.006666666666666667
+      },
+      {
+        "hamming_distance": 4,
+        "left": "000101110",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.006333333333333334,
+        "right": "010000111",
+        "right_energy_mhz": -23.354924087744934,
+        "right_probability": 0.06333333333333334
+      },
+      {
+        "hamming_distance": 6,
+        "left": "000101110",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05,
+        "normalized_hamming": 0.6666666666666666,
+        "overlap": -0.3333333333333333,
+        "pair_probability": 0.0013333333333333335,
+        "right": "010010011",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 2,
+        "left": "000101110",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05,
+        "normalized_hamming": 0.2222222222222222,
+        "overlap": 0.5555555555555556,
+        "pair_probability": 0.0016666666666666668,
+        "right": "010100110",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.016666666666666666
+      },
+      {
+        "hamming_distance": 3,
+        "left": "000101110",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05,
+        "normalized_hamming": 0.3333333333333333,
+        "overlap": 0.3333333333333333,
+        "pair_probability": 0.072,
+        "right": "100001111",
+        "right_energy_mhz": -28.006005166386508,
+        "right_probability": 0.72
+      },
+      {
+        "hamming_distance": 2,
+        "left": "001001101",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05333333333333334,
+        "normalized_hamming": 0.2222222222222222,
+        "overlap": 0.5555555555555556,
+        "pair_probability": 0.0014222222222222225,
+        "right": "001011001",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 2,
+        "left": "001001101",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05333333333333334,
+        "normalized_hamming": 0.2222222222222222,
+        "overlap": 0.5555555555555556,
+        "pair_probability": 0.0007111111111111113,
+        "right": "001101100",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.006666666666666667
+      },
+      {
+        "hamming_distance": 4,
+        "left": "001001101",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05333333333333334,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.006755555555555556,
+        "right": "010000111",
+        "right_energy_mhz": -23.354924087744934,
+        "right_probability": 0.06333333333333334
+      },
+      {
+        "hamming_distance": 6,
+        "left": "001001101",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05333333333333334,
+        "normalized_hamming": 0.6666666666666666,
+        "overlap": -0.3333333333333333,
+        "pair_probability": 0.0014222222222222225,
+        "right": "010010011",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 6,
+        "left": "001001101",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05333333333333334,
+        "normalized_hamming": 0.6666666666666666,
+        "overlap": -0.3333333333333333,
+        "pair_probability": 0.0017777777777777779,
+        "right": "010100110",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.016666666666666666
+      },
+      {
+        "hamming_distance": 3,
+        "left": "001001101",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.05333333333333334,
+        "normalized_hamming": 0.3333333333333333,
+        "overlap": 0.3333333333333333,
+        "pair_probability": 0.07680000000000001,
+        "right": "100001111",
+        "right_energy_mhz": -28.006005166386508,
+        "right_probability": 0.72
+      },
+      {
+        "hamming_distance": 4,
+        "left": "001011001",
+        "left_energy_mhz": -23.30597639535273,
+        "left_probability": 0.013333333333333334,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.0001777777777777778,
+        "right": "001101100",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.006666666666666667
+      },
+      {
+        "hamming_distance": 6,
+        "left": "001011001",
+        "left_energy_mhz": -23.30597639535273,
+        "left_probability": 0.013333333333333334,
+        "normalized_hamming": 0.6666666666666666,
+        "overlap": -0.3333333333333333,
+        "pair_probability": 0.001688888888888889,
+        "right": "010000111",
+        "right_energy_mhz": -23.354924087744934,
+        "right_probability": 0.06333333333333334
+      },
+      {
+        "hamming_distance": 4,
+        "left": "001011001",
+        "left_energy_mhz": -23.30597639535273,
+        "left_probability": 0.013333333333333334,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.0003555555555555556,
+        "right": "010010011",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 8,
+        "left": "001011001",
+        "left_energy_mhz": -23.30597639535273,
+        "left_probability": 0.013333333333333334,
+        "normalized_hamming": 0.8888888888888888,
+        "overlap": -0.7777777777777778,
+        "pair_probability": 0.00044444444444444447,
+        "right": "010100110",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.016666666666666666
+      },
+      {
+        "hamming_distance": 5,
+        "left": "001011001",
+        "left_energy_mhz": -23.30597639535273,
+        "left_probability": 0.013333333333333334,
+        "normalized_hamming": 0.5555555555555556,
+        "overlap": -0.1111111111111111,
+        "pair_probability": 0.019200000000000002,
+        "right": "100001111",
+        "right_energy_mhz": -28.006005166386508,
+        "right_probability": 0.72
+      },
+      {
+        "hamming_distance": 6,
+        "left": "001101100",
+        "left_energy_mhz": -23.019815144885705,
+        "left_probability": 0.006666666666666667,
+        "normalized_hamming": 0.6666666666666666,
+        "overlap": -0.3333333333333333,
+        "pair_probability": 0.0008444444444444445,
+        "right": "010000111",
+        "right_energy_mhz": -23.354924087744934,
+        "right_probability": 0.06333333333333334
+      },
+      {
+        "hamming_distance": 8,
+        "left": "001101100",
+        "left_energy_mhz": -23.019815144885705,
+        "left_probability": 0.006666666666666667,
+        "normalized_hamming": 0.8888888888888888,
+        "overlap": -0.7777777777777778,
+        "pair_probability": 0.0001777777777777778,
+        "right": "010010011",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 4,
+        "left": "001101100",
+        "left_energy_mhz": -23.019815144885705,
+        "left_probability": 0.006666666666666667,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.00022222222222222223,
+        "right": "010100110",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.016666666666666666
+      },
+      {
+        "hamming_distance": 5,
+        "left": "001101100",
+        "left_energy_mhz": -23.019815144885705,
+        "left_probability": 0.006666666666666667,
+        "normalized_hamming": 0.5555555555555556,
+        "overlap": -0.1111111111111111,
+        "pair_probability": 0.009600000000000001,
+        "right": "100001111",
+        "right_energy_mhz": -28.006005166386508,
+        "right_probability": 0.72
+      },
+      {
+        "hamming_distance": 2,
+        "left": "010000111",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.2222222222222222,
+        "overlap": 0.5555555555555556,
+        "pair_probability": 0.001688888888888889,
+        "right": "010010011",
+        "right_energy_mhz": -23.019815144885705,
+        "right_probability": 0.013333333333333334
+      },
+      {
+        "hamming_distance": 2,
+        "left": "010000111",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.2222222222222222,
+        "overlap": 0.5555555555555556,
+        "pair_probability": 0.0021111111111111113,
+        "right": "010100110",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.016666666666666666
+      },
+      {
+        "hamming_distance": 3,
+        "left": "010000111",
+        "left_energy_mhz": -23.354924087744934,
+        "left_probability": 0.06333333333333334,
+        "normalized_hamming": 0.3333333333333333,
+        "overlap": 0.3333333333333333,
+        "pair_probability": 0.0912,
+        "right": "100001111",
+        "right_energy_mhz": -28.006005166386508,
+        "right_probability": 0.72
+      },
+      {
+        "hamming_distance": 4,
+        "left": "010010011",
+        "left_energy_mhz": -23.019815144885705,
+        "left_probability": 0.013333333333333334,
+        "normalized_hamming": 0.4444444444444444,
+        "overlap": 0.1111111111111111,
+        "pair_probability": 0.00044444444444444447,
+        "right": "010100110",
+        "right_energy_mhz": -23.30597639535273,
+        "right_probability": 0.016666666666666666
+      },
+      {
+        "hamming_distance": 5,
+        "left": "010010011",
+        "left_energy_mhz": -23.019815144885705,
+        "left_probability": 0.013333333333333334,
+        "normalized_hamming": 0.5555555555555556,
+        "overlap": -0.1111111111111111,
+        "pair_probability": 0.019200000000000002,
+        "right": "100001111",
+        "right_energy_mhz": -28.006005166386508,
+        "right_probability": 0.72
+      },
+      {
+        "hamming_distance": 5,
+        "left": "010100110",
+        "left_energy_mhz": -23.30597639535273,
+        "left_probability": 0.016666666666666666,
+        "normalized_hamming": 0.5555555555555556,
+        "overlap": -0.1111111111111111,
+        "pair_probability": 0.024,
+        "right": "100001111",
+        "right_energy_mhz": -28.006005166386508,
+        "right_probability": 0.72
+      }
+    ],
+    "raw_counts": {
+      "000001111": 40,
+      "000011010": 1,
+      "000011011": 17,
+      "000101110": 12,
+      "000101111": 2,
+      "001001101": 15,
+      "001011001": 4,
+      "001011011": 1,
+      "001101100": 2,
+      "010000111": 18,
+      "010001111": 1,
+      "010010011": 4,
+      "010100110": 5,
+      "100000111": 1,
+      "100001101": 1,
+      "100001111": 174,
+      "100101010": 1,
+      "101001101": 1
+    }
+  },
+  "replicate": 1,
+  "run_id": "g00_p006_r01"
+}

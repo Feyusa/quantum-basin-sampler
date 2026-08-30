@@ -1,0 +1,46 @@
+{
+  "device_profile": "ruby_proxy",
+  "geometries": [
+    {
+      "descriptors": {
+        "bipartite": false,
+        "bond_strength_cv": 2.1175823681357506e-16,
+        "connected_components": 1,
+        "cycle_rank": 2,
+        "degree_variance": 1.2839506172839505,
+        "edges": 10,
+        "family": "clean_kagome",
+        "graph_cutoff_um": 6.0,
+        "has_odd_cycle": true,
+        "max_degree": 4,
+        "mean_degree": 2.2222222222222223,
+        "median_nearest_distance_um": 5.0,
+        "min_distance_um": 5.0,
+        "n_atoms": 9,
+        "name": "kagome_n9",
+        "nearest_distance_cv": 0.0,
+        "screening_label": "clean_frustrated_candidate",
+        "structural_class": "clean_geometric_frustration",
+        "triangles": 2
+      },
+      "name": "kagome_n9",
+      "ruby_proxy_issues": [],
+      "scientific_screening_warnings": []
+    }
+  ],
+  "pulse_issues": [],
+  "pulse_points": 8,
+  "replicates": 2,
+  "ruby_proxy": {
+    "dimensions": 2,
+    "max_abs_detuning_rad_per_us": 125.66370614359172,
+    "max_atoms": 100,
+    "max_omega_rad_per_us": 12.566370614359172,
+    "max_radial_distance_um": 38.0,
+    "max_sequence_duration_ns": 6000,
+    "min_distance_um": 5.0,
+    "name": "ruby_proxy_v0"
+  },
+  "total_quantum_runs": 16,
+  "valid_for_proxy": true
+}

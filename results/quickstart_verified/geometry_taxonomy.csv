@@ -1,0 +1,2 @@
+name,family,n_atoms,graph_cutoff_um,min_distance_um,median_nearest_distance_um,nearest_distance_cv,edges,connected_components,mean_degree,max_degree,degree_variance,triangles,cycle_rank,bipartite,has_odd_cycle,bond_strength_cv,structural_class,screening_label
+kagome_n9,clean_kagome,9,6.0,5.0,5.0,0.0,10,1,2.2222222222222223,4,1.2839506172839505,2,2,False,True,2.1175823681357506e-16,clean_geometric_frustration,clean_frustrated_candidate

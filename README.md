@@ -96,6 +96,10 @@ Important artifacts are:
 - `landscapes/*.json`: exact small-system basin/barrier analysis;
 - `plots/*`: overlap, hierarchy, and controlled-scan diagnostics.
 
+A curated verified example and the exact proposal/disorder screening tables
+are versioned under [`results/`](results/README.md). Large future scans remain
+ignored by default and should be archived as release assets or research data.
+
 The configured proposal scan is a replicated 2 x 2 x 3 x 2 factorial over
 Rabi amplitude, final detuning, sweep duration, and hold duration. Across six
 geometries and three run replicates it contains 432 ideal-emulator runs. Use

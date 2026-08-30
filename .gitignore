@@ -7,8 +7,13 @@ __pycache__/
 venv/
 build/
 dist/
-results/
+results/*
+!results/README.md
+!results/proposal_landscape_screen.csv
+!results/disorder_ensemble_screen.csv
+!results/quickstart_verified/
+!results/quickstart_verified/**
 *.png
 *.pdf
+!results/quickstart_verified/plots/*.png
 .DS_Store
-

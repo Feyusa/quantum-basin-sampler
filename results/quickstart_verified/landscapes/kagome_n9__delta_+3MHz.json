@@ -1,0 +1,282 @@
+{
+  "barrier_merge_tree": [
+    {
+      "barrier_above_higher_minimum_mhz": 2.5866477060556683,
+      "barrier_above_lower_minimum_mhz": 2.635595398447874,
+      "left_minima": [
+        "001011001"
+      ],
+      "merged_minima": [
+        "000011011",
+        "001011001"
+      ],
+      "right_minima": [
+        "000011011"
+      ],
+      "saddle_energy_mhz": -8.71932868929706
+    },
+    {
+      "barrier_above_higher_minimum_mhz": 2.5866477060556683,
+      "barrier_above_lower_minimum_mhz": 2.635595398447874,
+      "left_minima": [
+        "010100110"
+      ],
+      "merged_minima": [
+        "000101110",
+        "010100110"
+      ],
+      "right_minima": [
+        "000101110"
+      ],
+      "saddle_energy_mhz": -8.71932868929706
+    },
+    {
+      "barrier_above_higher_minimum_mhz": 2.5866477060556683,
+      "barrier_above_lower_minimum_mhz": 2.635595398447874,
+      "left_minima": [
+        "000011011",
+        "001011001"
+      ],
+      "merged_minima": [
+        "000011011",
+        "001001101",
+        "001011001"
+      ],
+      "right_minima": [
+        "001001101"
+      ],
+      "saddle_energy_mhz": -8.71932868929706
+    },
+    {
+      "barrier_above_higher_minimum_mhz": 2.5866477060556683,
+      "barrier_above_lower_minimum_mhz": 2.635595398447874,
+      "left_minima": [
+        "000101110",
+        "010100110"
+      ],
+      "merged_minima": [
+        "000101110",
+        "010000111",
+        "010100110"
+      ],
+      "right_minima": [
+        "010000111"
+      ],
+      "saddle_energy_mhz": -8.71932868929706
+    },
+    {
+      "barrier_above_higher_minimum_mhz": 2.649775125432626,
+      "barrier_above_lower_minimum_mhz": 4.349803896466412,
+      "left_minima": [
+        "100001111"
+      ],
+      "merged_minima": [
+        "000101110",
+        "010000111",
+        "010100110",
+        "100001111"
+      ],
+      "right_minima": [
+        "000101110",
+        "010000111",
+        "010100110"
+      ],
+      "saddle_energy_mhz": -8.656201269920102
+    },
+    {
+      "barrier_above_higher_minimum_mhz": 2.649775125432626,
+      "barrier_above_lower_minimum_mhz": 4.349803896466412,
+      "left_minima": [
+        "000101110",
+        "010000111",
+        "010100110",
+        "100001111"
+      ],
+      "merged_minima": [
+        "000011011",
+        "000101110",
+        "001001101",
+        "001011001",
+        "010000111",
+        "010100110",
+        "100001111"
+      ],
+      "right_minima": [
+        "000011011",
+        "001001101",
+        "001011001"
+      ],
+      "saddle_energy_mhz": -8.656201269920102
+    },
+    {
+      "barrier_above_higher_minimum_mhz": 2.509907572442854,
+      "barrier_above_lower_minimum_mhz": 4.496097593943661,
+      "left_minima": [
+        "010010011"
+      ],
+      "merged_minima": [
+        "000011011",
+        "000101110",
+        "001001101",
+        "001011001",
+        "010000111",
+        "010010011",
+        "010100110",
+        "100001111"
+      ],
+      "right_minima": [
+        "000011011",
+        "000101110",
+        "001001101",
+        "001011001",
+        "010000111",
+        "010100110",
+        "100001111"
+      ],
+      "saddle_energy_mhz": -8.509907572442852
+    },
+    {
+      "barrier_above_higher_minimum_mhz": 2.509907572442854,
+      "barrier_above_lower_minimum_mhz": 4.496097593943661,
+      "left_minima": [
+        "001101100"
+      ],
+      "merged_minima": [
+        "000011011",
+        "000101110",
+        "001001101",
+        "001011001",
+        "001101100",
+        "010000111",
+        "010010011",
+        "010100110",
+        "100001111"
+      ],
+      "right_minima": [
+        "000011011",
+        "000101110",
+        "001001101",
+        "001011001",
+        "010000111",
+        "010010011",
+        "010100110",
+        "100001111"
+      ],
+      "saddle_energy_mhz": -8.509907572442852
+    }
+  ],
+  "basins": [
+    {
+      "bitstring": "000011011",
+      "count": 91,
+      "energy_mhz": -11.354924087744934,
+      "energy_rad_per_us": -71.34509219225853,
+      "excitations": 4,
+      "magnetization": -0.1111111111111111,
+      "probability": 0.177734375,
+      "rank": 1
+    },
+    {
+      "bitstring": "001001101",
+      "count": 86,
+      "energy_mhz": -11.354924087744934,
+      "energy_rad_per_us": -71.34509219225853,
+      "excitations": 4,
+      "magnetization": -0.1111111111111111,
+      "probability": 0.16796875,
+      "rank": 2
+    },
+    {
+      "bitstring": "000101110",
+      "count": 82,
+      "energy_mhz": -11.354924087744934,
+      "energy_rad_per_us": -71.34509219225853,
+      "excitations": 4,
+      "magnetization": -0.1111111111111111,
+      "probability": 0.16015625,
+      "rank": 3
+    },
+    {
+      "bitstring": "010000111",
+      "count": 81,
+      "energy_mhz": -11.354924087744934,
+      "energy_rad_per_us": -71.34509219225853,
+      "excitations": 4,
+      "magnetization": -0.1111111111111111,
+      "probability": 0.158203125,
+      "rank": 4
+    },
+    {
+      "bitstring": "100001111",
+      "count": 58,
+      "energy_mhz": -13.006005166386513,
+      "energy_rad_per_us": -81.71914056654153,
+      "excitations": 5,
+      "magnetization": 0.1111111111111111,
+      "probability": 0.11328125,
+      "rank": 5
+    },
+    {
+      "bitstring": "001011001",
+      "count": 40,
+      "energy_mhz": -11.305976395352728,
+      "energy_rad_per_us": -71.03754477059948,
+      "excitations": 4,
+      "magnetization": -0.1111111111111111,
+      "probability": 0.078125,
+      "rank": 6
+    },
+    {
+      "bitstring": "010100110",
+      "count": 38,
+      "energy_mhz": -11.305976395352728,
+      "energy_rad_per_us": -71.03754477059948,
+      "excitations": 4,
+      "magnetization": -0.1111111111111111,
+      "probability": 0.07421875,
+      "rank": 7
+    },
+    {
+      "bitstring": "001101100",
+      "count": 18,
+      "energy_mhz": -11.019815144885706,
+      "energy_rad_per_us": -69.23954060618095,
+      "excitations": 4,
+      "magnetization": -0.1111111111111111,
+      "probability": 0.03515625,
+      "rank": 8
+    },
+    {
+      "bitstring": "010010011",
+      "count": 18,
+      "energy_mhz": -11.019815144885706,
+      "energy_rad_per_us": -69.23954060618095,
+      "excitations": 4,
+      "magnetization": -0.1111111111111111,
+      "probability": 0.03515625,
+      "rank": 9
+    }
+  ],
+  "delta_mhz": 3.0,
+  "delta_rad_per_us": 18.84955592153876,
+  "exact_partition": {
+    "descent_flip_cost_evaluations": 16794,
+    "input_samples": 512,
+    "mean_accepted_flips": 2.64453125,
+    "rule": "steepest",
+    "unique_basins": 9,
+    "unique_input_states": 512,
+    "weighted_accepted_flips": 1354
+  },
+  "landscape_key": "kagome_n9__delta_+3MHz",
+  "n_spins": 9,
+  "overlap_distribution": {
+    "-0.1111111111111111": 0.050445556640625,
+    "-0.3333333333333333": 0.1477508544921875,
+    "-0.7777777777777778": 0.014068603515625,
+    "0.1111111111111111": 0.35192108154296875,
+    "0.3333333333333333": 0.15045166015625,
+    "0.5555555555555556": 0.1479644775390625,
+    "1.0": 0.13739776611328125
+  }
+}
