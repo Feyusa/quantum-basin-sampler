@@ -1,4 +1,4 @@
-# Path D proposal plan: hybrid optimization sampler
+# Hybrid optimization sampler
 
 ## Current verdict
 
@@ -17,7 +17,7 @@ normally lacks global spin-flip symmetry, so a symmetric two-peak overlap plot
 is not a necessary success condition. Small clean arrays can also be strongly
 boundary dominated.
 
-## The Path D workflow
+## Workflow
 
 1. A neutral-atom pulse prepares and measures candidate bitstrings.
 2. A declared classical one-spin descent maps every bitstring to a local basin.
