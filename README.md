@@ -166,9 +166,3 @@ host-verified cycle and batch timings.
 ```bash
 python -m unittest discover -s tests -v
 ```
-
-## Repository status
-
-This is a proposal-stage research prototype.  Before public release, choose a
-license, add author/institution information, pin a validated dependency lock,
-and archive the exact configuration used for every reported figure.
